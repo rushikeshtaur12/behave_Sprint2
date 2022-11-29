@@ -16,6 +16,7 @@ Feature: Goibibo
     And apply Insurence
     And enter the passenger name
     And  enter the passenger age
+    And select gender
     And enter the passenger email
     And enter the passenger mobile
     And click on pay
@@ -23,7 +24,7 @@ Feature: Goibibo
         |arival       |destination |
         | latur       | mumbai     |
         | latur       | pune       |
-        |bengalore    | pune       |
+        |solapur    | pune       |
         | pune        | bengalore  |
         | nashik      | mumbai     |
         | swarget     | mumbai     |

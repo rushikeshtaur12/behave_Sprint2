@@ -74,7 +74,7 @@ def step_impl(context):
 
 @then(u'enter the passenger name')
 def step_impl(context):
-    context.driver.find_element("xpath", "//input[@placeholder='Enter Full Name']").send_keys("Rushikesh")
+    context.driver.find_element("xpath", "//input[@placeholder='Enter Full Name']").send_keys("Rushikesh Taur")
     time.sleep(2)
 
 
@@ -84,10 +84,15 @@ def step_impl(context):
     context.driver.find_element("xpath", "//input[@placeholder='Age']").send_keys("22")
     time.sleep(2)
 
+@then(u'select gender')
+def step_impl(context):
+    context.driver.find_element("xpath", '''(//li[@class="genderTabsList "])[1]''').click()
+    time.sleep(2)
+
 
 @then(u'enter the passenger email')
 def step_impl(context):
-    context.driver.find_element("xpath", "//input[@placeholder='Enter Email Address']").send_keys("rushi12@gmail.com")
+    context.driver.find_element("xpath", "//input[@placeholder='Enter Email Address']").send_keys("rushikeshtaur12@gmail.com")
     time.sleep(2)
 
 
